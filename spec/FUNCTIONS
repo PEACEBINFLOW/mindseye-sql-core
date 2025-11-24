@@ -1,0 +1,14 @@
+# Built-In Functions
+
+These are surfaced in the SQL grammar as **functions**, but backed by LAW-T / LAW-N semantics.
+
+---
+
+## `time(start, end)`
+
+Explicit time window.
+
+```sql
+SELECT *
+FROM event_stream
+WHERE time('2025-10-01T00:00:00Z', '2025-10-08T00:00:00Z')
